@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechNova Solutions - Innovative Technology Solutions</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+</head>
+<body class="gradient-bg">
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="text-2xl font-bold gradient-text">
+                    TechNova
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="nav-link active text-white hover:text-cyan-400">Home</a>
+                    <a href="services.html" class="nav-link text-white hover:text-cyan-400">Services</a>
+                    <a href="products.html" class="nav-link text-white hover:text-cyan-400">Products</a>
+                    <a href="about.html" class="nav-link text-white hover:text-cyan-400">About</a>
+                    <a href="contact.html" class="nav-link text-white hover:text-cyan-400">Contact</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 space-y-4">
+                <a href="index.html" class="block text-white hover:text-cyan-400">Home</a>
+                <a href="services.html" class="block text-white hover:text-cyan-400">Services</a>
+                <a href="products.html" class="block text-white hover:text-cyan-400">Products</a>
+                <a href="about.html" class="block text-white hover:text-cyan-400">About</a>
+                <a href="contact.html" class="block text-white hover:text-cyan-400">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <!-- Particle Background -->
+        <div id="particles-js"></div>
+        
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="text-center">
+                <h1 class="hero-title text-shadow mb-6" data-aos="fade-up">
+                    Welcome to the <span class="gradient-text">Future</span>
+                </h1>
+                <p class="hero-subtitle text-gray-300 mb-8 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="200">
+                    Innovative Hardware, Software, IoT, and AI/ML Solutions for Tomorrow's Challenges
+                </p>
+                <div class="flex flex-wrap gap-4 justify-center" data-aos="fade-up" data-aos-delay="400">
+                    <a href="services.html" class="glow-btn px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full font-semibold text-white relative z-10">
+                        Explore Services
+                    </a>
+                    <a href="contact.html" class="px-8 py-4 glass rounded-full font-semibold text-white hover:bg-white/10 transition">
+                        Get Started
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <svg class="w-6 h-6 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Services Showcase Section -->
+    <section class="py-20 relative">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">
+                    Our <span class="gradient-text">Services</span>
+                </h2>
+                <p class="text-gray-400 text-lg max-w-2xl mx-auto">
+                    Comprehensive technology solutions tailored to your business needs
+                </p>
+            </div>
+            
+            <!-- Swiper Carousel -->
+            <div class="swiper servicesSwiper" data-aos="fade-up" data-aos-delay="200">
+                <div class="swiper-wrapper">
+                    <!-- Service Slide 1 -->
+                    <div class="swiper-slide">
+                        <div class="glass p-8 rounded-2xl text-center h-full">
+                            <div class="text-6xl mb-4">🔧</div>
+                            <h3 class="text-2xl font-bold mb-4 gradient-text">Hardware Solutions</h3>
+                            <p class="text-gray-300">Custom hardware design and development for embedded systems, PCB design, and prototyping.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Service Slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="glass p-8 rounded-2xl text-center h-full">
+                            <div class="text-6xl mb-4">💻</div>
+                            <h3 class="text-2xl font-bold mb-4 gradient-text">Software Development</h3>
+                            <p class="text-gray-300">Full-stack web and mobile applications with modern frameworks and scalable architecture.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Service Slide 3 -->
+                    <div class="swiper-slide">
+                        <div class="glass p-8 rounded-2xl text-center h-full">
+                            <div class="text-6xl mb-4">🌐</div>
+                            <h3 class="text-2xl font-bold mb-4 gradient-text">IoT Systems</h3>
+                            <p class="text-gray-300">Smart connected devices and IoT platforms for industrial and consumer applications.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Service Slide 4 -->
+                    <div class="swiper-slide">
+                        <div class="glass p-8 rounded-2xl text-center h-full">
+                            <div class="text-6xl mb-4">🤖</div>
+                            <h3 class="text-2xl font-bold mb-4 gradient-text">AI & Machine Learning</h3>
+                            <p class="text-gray-300">Intelligent systems powered by advanced AI algorithms and deep learning models.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Service Slide 5 -->
+                    <div class="swiper-slide">
+                        <div class="glass p-8 rounded-2xl text-center h-full">
+                            <div class="text-6xl mb-4">🦾</div>
+                            <h3 class="text-2xl font-bold mb-4 gradient-text">Robotics</h3>
+                            <p class="text-gray-300">Autonomous robots and automation solutions for manufacturing and service industries.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Service Slide 6 -->
+                    <div class="swiper-slide">
+                        <div class="glass p-8 rounded-2xl text-center h-full">
+                            <div class="text-6xl mb-4">☁️</div>
+                            <h3 class="text-2xl font-bold mb-4 gradient-text">Cloud Solutions</h3>
+                            <p class="text-gray-300">Scalable cloud infrastructure and DevOps services for modern applications.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination mt-8"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="py-20 relative">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="glass-strong p-8 rounded-2xl text-center" data-aos="fade-up" data-aos-delay="0">
+                    <div class="text-5xl mb-4">⚡</div>
+                    <h3 class="text-2xl font-bold mb-4">Fast Delivery</h3>
+                    <p class="text-gray-300">Quick turnaround times without compromising quality</p>
+                </div>
+                
+                <div class="glass-strong p-8 rounded-2xl text-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-5xl mb-4">🎯</div>
+                    <h3 class="text-2xl font-bold mb-4">Expert Team</h3>
+                    <p class="text-gray-300">Experienced professionals in cutting-edge technologies</p>
+                </div>
+                
+                <div class="glass-strong p-8 rounded-2xl text-center" data-aos="fade-up" data-aos-delay="400">
+                    <div class="text-5xl mb-4">💎</div>
+                    <h3 class="text-2xl font-bold mb-4">Quality Assured</h3>
+                    <p class="text-gray-300">Rigorous testing and quality control processes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-20 relative">
+        <div class="container mx-auto px-6">
+            <div class="glass-strong p-12 rounded-3xl">
+                <div class="grid md:grid-cols-4 gap-8 text-center">
+                    <div data-aos="fade-up" data-aos-delay="0">
+                        <div class="text-5xl font-bold gradient-text mb-2" data-count="500">0</div>
+                        <p class="text-gray-400">Projects Completed</p>
+                    </div>
+                    <div data-aos="fade-up" data-aos-delay="100">
+                        <div class="text-5xl font-bold gradient-text mb-2" data-count="200">0</div>
+                        <p class="text-gray-400">Happy Clients</p>
+                    </div>
+                    <div data-aos="fade-up" data-aos-delay="200">
+                        <div class="text-5xl font-bold gradient-text mb-2" data-count="50">0</div>
+                        <p class="text-gray-400">Team Members</p>
+                    </div>
+                    <div data-aos="fade-up" data-aos-delay="300">
+                        <div class="text-5xl font-bold gradient-text mb-2" data-count="15">0</div>
+                        <p class="text-gray-400">Years Experience</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 relative">
+        <div class="container mx-auto px-6">
+            <div class="glass-strong p-12 rounded-3xl text-center" data-aos="zoom-in">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">
+                    Ready to <span class="gradient-text">Transform</span> Your Business?
+                </h2>
+                <p class="text-gray-300 text-lg mb-8 max-w-2xl mx-auto">
+                    Let's discuss how our innovative solutions can help you achieve your goals
+                </p>
+                <a href="contact.html" class="glow-btn inline-block px-10 py-4 bg-gradient-to-r from-cyan-500 to-purple-500 rounded-full font-semibold text-white">
+                    Contact Us Today
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-white/10">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-2xl font-bold gradient-text mb-4">TechNova</h3>
+                    <p class="text-gray-400">Innovative technology solutions for a better tomorrow.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="index.html" class="hover:text-cyan-400 transition">Home</a></li>
+                        <li><a href="services.html" class="hover:text-cyan-400 transition">Services</a></li>
+                        <li><a href="products.html" class="hover:text-cyan-400 transition">Products</a></li>
+                        <li><a href="about.html" class="hover:text-cyan-400 transition">About</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="services.html" class="hover:text-cyan-400 transition">Hardware</a></li>
+                        <li><a href="services.html" class="hover:text-cyan-400 transition">Software</a></li>
+                        <li><a href="services.html" class="hover:text-cyan-400 transition">IoT</a></li>
+                        <li><a href="services.html" class="hover:text-cyan-400 transition">AI/ML</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Contact</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>Email: info@technova.com</li>
+                        <li>Phone: +1 (555) 123-4567</li>
+                        <li>Address: 123 Tech Street, Silicon Valley, CA</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center text-gray-400 pt-8 border-t border-white/10">
+                <p>&copy; 2025 TechNova Solutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>

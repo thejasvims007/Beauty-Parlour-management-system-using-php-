@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - TechNova Solutions</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body class="gradient-bg">
+    
+    <!-- Navigation -->
+    <nav class="navbar scrolled">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="text-2xl font-bold gradient-text">
+                    TechNova
+                </div>
+                
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="nav-link text-white hover:text-cyan-400">Home</a>
+                    <a href="services.html" class="nav-link text-white hover:text-cyan-400">Services</a>
+                    <a href="products.html" class="nav-link text-white hover:text-cyan-400">Products</a>
+                    <a href="about.html" class="nav-link text-white hover:text-cyan-400">About</a>
+                    <a href="contact.html" class="nav-link active text-white hover:text-cyan-400">Contact</a>
+                </div>
+                
+                <button id="mobile-menu-btn" class="md:hidden text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            
+            <div id="mobile-menu" class="hidden md:hidden mt-4 space-y-4">
+                <a href="index.html" class="block text-white hover:text-cyan-400">Home</a>
+                <a href="services.html" class="block text-white hover:text-cyan-400">Services</a>
+                <a href="products.html" class="block text-white hover:text-cyan-400">Products</a>
+                <a href="about.html" class="block text-white hover:text-cyan-400">About</a>
+                <a href="contact.html" class="block text-white hover:text-cyan-400">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h1 class="text-5xl md:text-6xl font-bold mb-6">
+                    Get in <span class="gradient-text">Touch</span>
+                </h1>
+                <p class="text-gray-300 text-xl max-w-3xl mx-auto">
+                    Let's discuss how we can help transform your business with innovative technology solutions
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="pb-20">
+        <div class="container mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-12">
+                
+                <!-- Contact Form -->
+                <div data-aos="fade-right">
+                    <div class="glass-strong p-8 rounded-3xl">
+                        <h2 class="text-3xl font-bold mb-6 gradient-text">Send us a Message</h2>
+                        
+                        <form id="contact-form" class="space-y-6">
+                            <div>
+                                <label for="name" class="block text-sm font-semibold mb-2">Full Name *</label>
+                                <input 
+                                    type="text" 
+                                    id="name" 
+                                    name="name" 
+                                    required
+                                    class="form-input"
+                                    placeholder="John Doe"
+                                >
+                                <span class="error-message text-red-400 text-sm hidden"></span>
+                            </div>
+
+                            <div>
+                                <label for="email" class="block text-sm font-semibold mb-2">Email Address *</label>
+                                <input 
+                                    type="email" 
+                                    id="email" 
+                                    name="email" 
+                                    required
+                                    class="form-input"
+                                    placeholder="john@example.com"
+                                >
+                                <span class="error-message text-red-400 text-sm hidden"></span>
+                            </div>
+
+                            <div>
+                                <label for="phone" class="block text-sm font-semibold mb-2">Phone Number</label>
+                                <input 
+                                    type="tel" 
+                                    id="phone" 
+                                    name="phone"
+                                    class="form-input"
+                                    placeholder="+1 (555) 123-4567"
+                                >
+                            </div>
+
+                            <div>
+                                <label for="company" class="block text-sm font-semibold mb-2">Company</label>
+                                <input 
+                                    type="text" 
+                                    id="company" 
+                                    name="company"
+                                    class="form-input"
+                                    placeholder="Your Company Name"
+                                >
+                            </div>
+
+                            <div>
+                                <label for="service" class="block text-sm font-semibold mb-2">Service Interested In *</label>
+                                <select 
+                                    id="service" 
+                                    name="service" 
+                                    required
+                                    class="form-input"
+                                >
+                                    <option value="">Select a service</option>
+                                    <option value="hardware">Hardware Solutions</option>
+                                    <option value="software">Software Development</option>
+                                    <option value="iot">IoT Systems</option>
+                                    <option value="ai">AI & Machine Learning</option>
+                                    <option value="robotics">Robotics</option>
+                                    <option value="cloud">Cloud Solutions</option>
+                                    <option value="other">Other</option>
+                                </select>
+                                <span class="error-message text-red-400 text-sm hidden"></span>
+                            </div>
+
+                            <div>
+                                <label for="message" class="block text-sm font-semibold mb-2">Message *</label>
+                                <textarea 
+                                    id="message" 
+                                    name="message" 
+                                    rows="5" 
+                                    required
+                                    class="form-textarea"
+                                    placeholder="Tell us about your project..."
+                                ></textarea>
+                                <span class="error-message text-red-400 text-sm hidden"></span>
+                            </div>
+
+                            <div class="flex items-start">
+                                <input 
+                                    type="checkbox" 
+                                    id="privacy" 
+                                    name="privacy" 
+                                    required
+                                    class="mt-1 mr-3 w-4 h-4"
+                                >
+                                <label for="privacy" class="text-sm text-gray-300">
+                                    I agree to the privacy policy and terms of service *
+                                </label>
+                            </div>
+
+                            <button 
+                                type="submit" 
+                                class="glow-btn w-full px-8 py-4 bg-gradient-to-r from-cyan-500 to-purple-500 rounded-lg font-semibold text-white flex items-center justify-center"
+                            >
+                                <span id="submit-text">Send Message</span>
+                                <span id="submit-loading" class="loading hidden ml-3"></span>
+                            </button>
+
+                            <div id="form-success" class="hidden p-4 bg-green-500/20 border border-green-500 rounded-lg text-green-400">
+                                Thank you! Your message has been sent successfully. We'll get back to you soon.
+                            </div>
+
+                            <div id="form-error" class="hidden p-4 bg-red-500/20 border border-red-500 rounded-lg text-red-400">
+                                Oops! Something went wrong. Please try again.
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Contact Information -->
+                <div data-aos="fade-left">
+                    <div class="space-y-8">
+                        
+                        <!-- Contact Cards -->
+                        <div class="glass-strong p-8 rounded-3xl">
+                            <h3 class="text-2xl font-bold mb-6">Contact Information</h3>
+                            
+                            <div class="space-y-6">
+                                <div class="flex items-start">
+                                    <div class="text-3xl mr-4">📧</div>
+                                    <div>
+                                        <h4 class="font-semibold mb-1">Email</h4>
+                                        <p class="text-gray-400">info@technova.com</p>
+                                        <p class="text-gray-400">support@technova.com</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start">
+                                    <div class="text-3xl mr-4">📞</div>
+                                    <div>
+                                        <h4 class="font-semibold mb-1">Phone</h4>
+                                        <p class="text-gray-400">+1 (555) 123-4567</p>
+                                        <p class="text-gray-400">+1 (555) 987-6543</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start">
+                                    <div class="text-3xl mr-4">📍</div>
+                                    <div>
+                                        <h4 class="font-semibold mb-1">Address</h4>
+                                        <p class="text-gray-400">123 Tech Street</p>
+                                        <p class="text-gray-400">Silicon Valley, CA 94025</p>
+                                        <p class="text-gray-400">United States</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start">
+                                    <div class="text-3xl mr-4">🕐</div>
+                                    <div>
+                                        <h4 class="font-semibold mb-1">Business Hours</h4>
+                                        <p class="text-gray-400">Monday - Friday: 9:00 AM - 6:00 PM</p>
+                                        <p class="text-gray-400">Saturday: 10:00 AM - 4:00 PM</p>
+                                        <p class="text-gray-400">Sunday: Closed</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Social Media -->
+                        <div class="glass-strong p-8 rounded-3xl">
+                            <h3 class="text-2xl font-bold mb-6">Follow Us</h3>
+                            <div class="flex space-x-4">
+                                <a href="#" class="w-12 h-12 glass rounded-full flex items-center justify-center hover:bg-white/10 transition text-xl">
+                                    🔗
+                                </a>
+                                <a href="#" class="w-12 h-12 glass rounded-full flex items-center justify-center hover:bg-white/10 transition text-xl">
+                                    🐦
+                                </a>
+                                <a href="#" class="w-12 h-12 glass rounded-full flex items-center justify-center hover:bg-white/10 transition text-xl">
+                                    📘
+                                </a>
+                                <a href="#" class="w-12 h-12 glass rounded-full flex items-center justify-center hover:bg-white/10 transition text-xl">
+                                    📷
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Map -->
+                        <div class="glass-strong p-2 rounded-3xl overflow-hidden">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.639290102153!2d-122.08624908469225!3d37.42199997982517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fba02425dad8f%3A0x6c296c66619367e0!2sGoogleplex!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus" 
+                                width="100%" 
+                                height="300" 
+                                style="border:0; border-radius: 1.5rem;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade"
+                            ></iframe>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">
+                    Frequently Asked <span class="gradient-text">Questions</span>
+                </h2>
+                <p class="text-gray-400 text-lg max-w-2xl mx-auto">
+                    Quick answers to common questions
+                </p>
+            </div>
+
+            <div class="max-w-3xl mx-auto space-y-4">
+                <div class="glass-strong rounded-2xl overflow-hidden" data-aos="fade-up">
+                    <button class="faq-question w-full text-left p-6 flex items-center justify-between hover:bg-white/5 transition">
+                        <span class="font-semibold text-lg">What services do you offer?</span>
+                        <span class="text-2xl">+</span>
+                    </button>
+                    <div class="faq-answer hidden p-6 pt-0 text-gray-300">
+                        We offer comprehensive technology solutions including hardware design, software development, IoT systems, AI/ML services, robotics, and cloud solutions. Our team can handle projects from concept to deployment.
+                    </div>
+                </div>
+
+                <div class="glass-strong rounded-2xl overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+                    <button class="faq-question w-full text-left p-6 flex items-center justify-between hover:bg-white/5 transition">
+                        <span class="font-semibold text-lg">How long does a typical project take?</span>
+                        <span class="text-2xl">+</span>
+                    </button>
+                    <div class="faq-answer hidden p-6 pt-0 text-gray-300">
+                        Project timelines vary based on complexity and scope. Simple projects may take 2-4 weeks, while complex enterprise solutions can take 3-6 months. We provide detailed timelines during the planning phase.
+                    </div>
+                </div>
+
+                <div class="glass-strong rounded-2xl overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+                    <button class="faq-question w-full text-left p-6 flex items-center justify-between hover:bg-white/5 transition">
+                        <span class="font-semibold text-lg">Do you provide ongoing support?</span>
+                        <span class="text-2xl">+</span>
+                    </button>
+                    <div class="faq-answer hidden p-6 pt-0 text-gray-300">
+                        Yes! We offer comprehensive support and maintenance packages. This includes bug fixes, updates, monitoring, and technical support to ensure your solution runs smoothly.
+                    </div>
+                </div>
+
+                <div class="glass-strong rounded-2xl overflow-hidden" data-aos="fade-up" data-aos-delay="300">
+                    <button class="faq-question w-full text-left p-6 flex items-center justify-between hover:bg-white/5 transition">
+                        <span class="font-semibold text-lg">What industries do you work with?</span>
+                        <span class="text-2xl">+</span>
+                    </button>
+                    <div class="faq-answer hidden p-6 pt-0 text-gray-300">
+                        We work with diverse industries including manufacturing, healthcare, retail, agriculture, smart cities, and more. Our solutions are customized to meet specific industry requirements.
+                    </div>
+                </div>
+
+                <div class="glass-strong rounded-2xl overflow-hidden" data-aos="fade-up" data-aos-delay="400">
+                    <button class="faq-question w-full text-left p-6 flex items-center justify-between hover:bg-white/5 transition">
+                        <span class="font-semibold text-lg">How do I get started?</span>
+                        <span class="text-2xl">+</span>
+                    </button>
+                    <div class="faq-answer hidden p-6 pt-0 text-gray-300">
+                        Simply fill out the contact form above or reach out via email or phone. We'll schedule a consultation to discuss your needs and provide a customized proposal.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-white/10">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-2xl font-bold gradient-text mb-4">TechNova</h3>
+                    <p class="text-gray-400">Innovative technology solutions for a better tomorrow.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="index.html" class="hover:text-cyan-400 transition">Home</a></li>
+                        <li><a href="services.html" class="hover:text-cyan-400 transition">Services</a></li>
+                        <li><a href="products.html" class="hover:text-cyan-400 transition">Products</a></li>
+                        <li><a href="about.html" class="hover:text-cyan-400 transition">About</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="services.html" class="hover:text-cyan-400 transition">Hardware</a></li>
+                        <li><a href="services.html" class="hover:text-cyan-400 transition">Software</a></li>
+                        <li><a href="services.html" class="hover:text-cyan-400 transition">IoT</a></li>
+                        <li><a href="services.html" class="hover:text-cyan-400 transition">AI/ML</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Contact</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>Email: info@technova.com</li>
+                        <li>Phone: +1 (555) 123-4567</li>
+                        <li>Address: 123 Tech Street, Silicon Valley, CA</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center text-gray-400 pt-8 border-t border-white/10">
+                <p>&copy; 2025 TechNova Solutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        // FAQ Toggle
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const answer = button.nextElementSibling;
+                const icon = button.querySelector('span:last-child');
+                
+                answer.classList.toggle('hidden');
+                icon.textContent = answer.classList.contains('hidden') ? '+' : '−';
+            });
+        });
+
+        // Form Validation and Submission
+        const form = document.getElementById('contact-form');
+        const submitText = document.getElementById('submit-text');
+        const submitLoading = document.getElementById('submit-loading');
+        const formSuccess = document.getElementById('form-success');
+        const formError = document.getElementById('form-error');
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            // Reset messages
+            formSuccess.classList.add('hidden');
+            formError.classList.add('hidden');
+            
+            // Show loading
+            submitText.textContent = 'Sending...';
+            submitLoading.classList.remove('hidden');
+            
+            // Simulate form submission (replace with actual API call)
+            setTimeout(() => {
+                // Success
+                submitText.textContent = 'Send Message';
+                submitLoading.classList.add('hidden');
+                formSuccess.classList.remove('hidden');
+                form.reset();
+                
+                // Hide success message after 5 seconds
+                setTimeout(() => {
+                    formSuccess.classList.add('hidden');
+                }, 5000);
+            }, 2000);
+        });
+
+        // Real-time validation
+        const emailInput = document.getElementById('email');
+        emailInput.addEventListener('blur', () => {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(emailInput.value)) {
+                emailInput.classList.add('border-red-500');
+            } else {
+                emailInput.classList.remove('border-red-500');
+            }
+        });
+    </script>
+</body>
+</html>

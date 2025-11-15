@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - TechNova Solutions</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body class="gradient-bg">
+    
+    <!-- Navigation -->
+    <nav class="navbar scrolled">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="text-2xl font-bold gradient-text">
+                    TechNova
+                </div>
+                
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="nav-link text-white hover:text-cyan-400">Home</a>
+                    <a href="services.html" class="nav-link active text-white hover:text-cyan-400">Services</a>
+                    <a href="products.html" class="nav-link text-white hover:text-cyan-400">Products</a>
+                    <a href="about.html" class="nav-link text-white hover:text-cyan-400">About</a>
+                    <a href="contact.html" class="nav-link text-white hover:text-cyan-400">Contact</a>
+                </div>
+                
+                <button id="mobile-menu-btn" class="md:hidden text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            
+            <div id="mobile-menu" class="hidden md:hidden mt-4 space-y-4">
+                <a href="index.html" class="block text-white hover:text-cyan-400">Home</a>
+                <a href="services.html" class="block text-white hover:text-cyan-400">Services</a>
+                <a href="products.html" class="block text-white hover:text-cyan-400">Products</a>
+                <a href="about.html" class="block text-white hover:text-cyan-400">About</a>
+                <a href="contact.html" class="block text-white hover:text-cyan-400">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h1 class="text-5xl md:text-6xl font-bold mb-6">
+                    Our <span class="gradient-text">Services</span>
+                </h1>
+                <p class="text-gray-300 text-xl max-w-3xl mx-auto">
+                    Comprehensive technology solutions designed to drive innovation and growth
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="pb-20">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service Card 1: Hardware Solutions -->
+                <div class="service-card glass p-8 rounded-2xl" data-aos="fade-up" data-aos-delay="0">
+                    <div class="service-icon mb-6">🔧</div>
+                    <h3 class="text-2xl font-bold mb-4">Hardware Solutions</h3>
+                    <p class="text-gray-300 mb-6">
+                        Custom hardware design and development for embedded systems, PCB design, and rapid prototyping.
+                    </p>
+                    <ul class="space-y-2 text-gray-400 mb-6">
+                        <li class="flex items-start">
+                            <span class="text-cyan-400 mr-2">✓</span>
+                            <span>PCB Design & Manufacturing</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-cyan-400 mr-2">✓</span>
+                            <span>Embedded Systems Development</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-cyan-400 mr-2">✓</span>
+                            <span>Rapid Prototyping</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-cyan-400 mr-2">✓</span>
+                            <span>Hardware Testing & Validation</span>
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="inline-block px-6 py-3 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg font-semibold hover:shadow-lg transition">
+                        Learn More
+                    </a>
+                </div>
+
+                <!-- Service Card 2: Software Development -->
+                <div class="service-card glass p-8 rounded-2xl" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon mb-6">💻</div>
+                    <h3 class="text-2xl font-bold mb-4">Software Development</h3>
+                    <p class="text-gray-300 mb-6">
+                        Full-stack web and mobile applications with modern frameworks and scalable architecture.
+                    </p>
+                    <ul class="space-y-2 text-gray-400 mb-6">
+                        <li class="flex items-start">
+                            <span class="text-cyan-400 mr-2">✓</span>
+                            <span>Web Application Development</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-cyan-400 mr-2">✓</span>
+                            <span>Mobile App Development</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-cyan-400 mr-2">✓</span>
+                            <span>API Development & Integration</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-cyan-400 mr-2">✓</span>
+                            <span>Custom Software Solutions</span>
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="inline-block px-6 py-3 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg font-semibold hover:shadow-lg transition">
+                        Learn More
+                    </a>
+                </div>
+
+                <!-- Service Card 3: IoT Systems -->
+                <div class="service-card glass p-8 rounded-2xl" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon mb-6">🌐</div>
+                    <h3 class="text-2xl font-bold mb-4">IoT Systems</h3>
+                    <p class="text-gray-300 mb-6">
+                        Smart connected devices and IoT platforms for industrial and consumer applications.
+                    </p>
+                    <ul class="space-y-2 text-gray-400 mb-6">
+                        <li class="flex items-start">
+                            <span class="text-cyan-400 mr-2">✓</span>
+                            <span>IoT Device Development</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-cyan-400 mr-2">✓</span>
+                            <span>Sensor Integration</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-cyan-400 mr-2">✓</span>
+                            <span>Cloud Connectivity</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-cyan-400 mr-2">✓</span>
+                            <span>Data Analytics & Monitoring</span>
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="inline-block px-6 py-3 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg font-semibold hover:shadow-lg transition">
+                        Learn More
+                    </a>
+                </div>
+
+                <!-- Service Card 4: AI & Machine Learning -->
+                <div class="service-card glass p-8 rounded-2xl" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon mb-6">🤖</div>
+                    <h3 class="text-2xl font-bold mb-4">AI & Machine Learning</h3>
+                    <p class="text-gray-300 mb-6">
+                        Intelligent systems powered by advanced AI algorithms and deep learning models.
+                    </p>
+                    <ul class="space-y-2 text-gray-400 mb-6">
+                        <li class="flex items-start">
+                            <span class="text-cyan-400 mr-2">✓</span>
+                            <span>Machine Learning Models</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-cyan-400 mr-2">✓</span>
+                            <span>Computer Vision Solutions</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-cyan-400 mr-2">✓</span>
+                            <span>Natural Language Processing</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-cyan-400 mr-2">✓</span>
+                            <span>Predictive Analytics</span>
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="inline-block px-6 py-3 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg font-semibold hover:shadow-lg transition">
+                        Learn More
+                    </a>
+                </div>
+
+                <!-- Service Card 5: Robotics -->
+                <div class="service-card glass p-8 rounded-2xl" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-icon mb-6">🦾</div>
+                    <h3 class="text-2xl font-bold mb-4">Robotics</h3>
+                    <p class="text-gray-300 mb-6">
+                        Autonomous robots and automation solutions for manufacturing and service industries.
+                    </p>
+                    <ul class="space-y-2 text-gray-400 mb-6">
+                        <li class="flex items-start">
+                            <span class="text-cyan-400 mr-2">✓</span>
+                            <span>Industrial Automation</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-cyan-400 mr-2">✓</span>
+                            <span>Autonomous Navigation</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-cyan-400 mr-2">✓</span>
+                            <span>Robotic Process Automation</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-cyan-400 mr-2">✓</span>
+                            <span>Custom Robot Design</span>
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="inline-block px-6 py-3 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg font-semibold hover:shadow-lg transition">
+                        Learn More
+                    </a>
+                </div>
+
+                <!-- Service Card 6: Cloud Solutions -->
+                <div class="service-card glass p-8 rounded-2xl" data-aos="fade-up" data-aos-delay="500">
+                    <div class="service-icon mb-6">☁️</div>
+                    <h3 class="text-2xl font-bold mb-4">Cloud Solutions</h3>
+                    <p class="text-gray-300 mb-6">
+                        Scalable cloud infrastructure and DevOps services for modern applications.
+                    </p>
+                    <ul class="space-y-2 text-gray-400 mb-6">
+                        <li class="flex items-start">
+                            <span class="text-cyan-400 mr-2">✓</span>
+                            <span>Cloud Migration</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-cyan-400 mr-2">✓</span>
+                            <span>DevOps & CI/CD</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-cyan-400 mr-2">✓</span>
+                            <span>Infrastructure as Code</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-cyan-400 mr-2">✓</span>
+                            <span>Cloud Security</span>
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="inline-block px-6 py-3 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg font-semibold hover:shadow-lg transition">
+                        Learn More
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">
+                    Our <span class="gradient-text">Process</span>
+                </h2>
+                <p class="text-gray-400 text-lg max-w-2xl mx-auto">
+                    A streamlined approach to deliver exceptional results
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="text-center" data-aos="fade-up" data-aos-delay="0">
+                    <div class="w-20 h-20 mx-auto mb-4 rounded-full bg-gradient-to-r from-cyan-500 to-blue-500 flex items-center justify-center text-2xl font-bold">
+                        1
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Discovery</h3>
+                    <p class="text-gray-400">Understanding your needs and requirements</p>
+                </div>
+
+                <div class="text-center" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-20 h-20 mx-auto mb-4 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 flex items-center justify-center text-2xl font-bold">
+                        2
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Planning</h3>
+                    <p class="text-gray-400">Creating a detailed roadmap and strategy</p>
+                </div>
+
+                <div class="text-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-20 h-20 mx-auto mb-4 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center text-2xl font-bold">
+                        3
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Development</h3>
+                    <p class="text-gray-400">Building your solution with precision</p>
+                </div>
+
+                <div class="text-center" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-20 h-20 mx-auto mb-4 rounded-full bg-gradient-to-r from-pink-500 to-cyan-500 flex items-center justify-center text-2xl font-bold">
+                        4
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Delivery</h3>
+                    <p class="text-gray-400">Launching and supporting your project</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="glass-strong p-12 rounded-3xl text-center" data-aos="zoom-in">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">
+                    Ready to Get Started?
+                </h2>
+                <p class="text-gray-300 text-lg mb-8 max-w-2xl mx-auto">
+                    Let's discuss how we can help bring your vision to life
+                </p>
+                <a href="contact.html" class="glow-btn inline-block px-10 py-4 bg-gradient-to-r from-cyan-500 to-purple-500 rounded-full font-semibold text-white">
+                    Contact Us
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-white/10">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-2xl font-bold gradient-text mb-4">TechNova</h3>
+                    <p class="text-gray-400">Innovative technology solutions for a better tomorrow.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="index.html" class="hover:text-cyan-400 transition">Home</a></li>
+                        <li><a href="services.html" class="hover:text-cyan-400 transition">Services</a></li>
+                        <li><a href="products.html" class="hover:text-cyan-400 transition">Products</a></li>
+                        <li><a href="about.html" class="hover:text-cyan-400 transition">About</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="services.html" class="hover:text-cyan-400 transition">Hardware</a></li>
+                        <li><a href="services.html" class="hover:text-cyan-400 transition">Software</a></li>
+                        <li><a href="services.html" class="hover:text-cyan-400 transition">IoT</a></li>
+                        <li><a href="services.html" class="hover:text-cyan-400 transition">AI/ML</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Contact</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>Email: info@technova.com</li>
+                        <li>Phone: +1 (555) 123-4567</li>
+                        <li>Address: 123 Tech Street, Silicon Valley, CA</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center text-gray-400 pt-8 border-t border-white/10">
+                <p>&copy; 2025 TechNova Solutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+</body>
+</html>
